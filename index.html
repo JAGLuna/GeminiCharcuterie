@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charcuterie Board Order</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        legend {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 80px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Craft Your Dream Charcuterie Board</h1>
+        <form id="order-form">
+            <fieldset>
+                <legend>Your Information</legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Event Details</legend>
+                <label for="date">Date of Event:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Event Start Time:</label>
+                <input type="time" id="time" name="time" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Delivery Information</legend>
+                <label for="address">Full Delivery Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+
+                <label for="contact">Preferred Contact Method:</label>
+                <select id="contact" name="contact">
+                    <option value="email">Email</option>
+                    <option value="phone">Phone Call</option>
+                    <option value="text">Text Message</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Charcuterie Board Options</legend>
+                <label for="board-type">Board Type:</label>
+                <select id="board-type" name="board-type">
+                    <option value="small">Small (Serves 2-4)</option>
+                    <option value="medium">Medium (Serves 5-7)</option>
+                    <option value="large">Large (Serves 8-10+) </option>
+                </select>
+
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="2" required>
+
+                <label for="design">Design Preference:</label>
+                <br>
+                <input type="radio" id="classic" name="design" value="classic" checked> Classic
+                <input type="radio" id="modern" name="design" value="modern"> Modern
+                <input type="radio" id="seasonal" name="design
